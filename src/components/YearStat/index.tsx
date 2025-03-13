@@ -56,9 +56,9 @@ const YearStat = ({ year, onClick }: { year: string, onClick: (_year: string) =>
     >
       <section>
         <Stat value={year} description=" Journey" />
-        <Stat value={runs.length} description=" Rides" />
+        <Stat value={runs.length} description=" Hikes" />
         <Stat value={sumDistance} description=" KM" />
-        <Stat value={avgPace} description=" Avg Speed" />
+        <Stat value={avgPace} description=" Avg Pace" />
         <Stat value={`${streak} day`} description=" Streak" />
         {hasHeartRate && (
           <Stat value={avgHeartRate} description=" Avg Heart Rate" />

@@ -10,8 +10,8 @@ interface ISiteMetadataResult {
 }
 
 const data: ISiteMetadataResult = {
-  siteTitle: 'Cycling Page',
-  siteUrl: 'https://sisyplone.github.io/cycling_page',
+  siteTitle: 'Hiking Page',
+  siteUrl: 'https://sisyplone.github.io/hiking_page',
   logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
   description: 'Personal site and blog',
   navLinks: [
@@ -22,6 +22,10 @@ const data: ISiteMetadataResult = {
     {
       name: 'Cycling',
       url: 'https://sisyplone.github.io/cycling_page',
+    },
+    {
+      name: 'Hiking',
+      url: 'https://sisyplone.github.io/hiking_page',
     },
     {
       name: 'About',

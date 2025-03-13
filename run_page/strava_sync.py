@@ -11,7 +11,7 @@ def run_strava_sync(client_id, client_secret, refresh_token, only_hike=False):
     generator.set_strava_config(client_id, client_secret, refresh_token)
     # if you want to refresh data change False to True
     generator.only_hike = only_hike
-    generator.sync(True)
+    generator.sync(False)
 
     activities_list = generator.load()
     with open(JSON_FILE, "w") as f:
@@ -27,7 +27,7 @@ if __name__ == "__main__":
         "--only-hike",
         dest="only_hike",
         action="store_true",
-        help="if is only for cycling",
+        help="if is only for hiking",
     )
     options = parser.parse_args()
     run_strava_sync(
